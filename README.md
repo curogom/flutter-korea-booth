@@ -1,5 +1,7 @@
 # Demo Booth Quiz
 
+[English](README.md) | [한국어](README.ko.md)
+
 A bilingual Korean/English Flutter web quiz. The default build uses 17 original arithmetic demo questions and makes no Firebase or Analytics connection. It asks four questions per round, preserves stable answer IDs across languages, supports touch layouts, and shows no real prize entitlement.
 
 ## Run locally
@@ -56,6 +58,8 @@ npm --prefix tools run test:emulators
 ```
 
 The rules suite uses demo-quiz-tests and isolated loopback ports 8085/9095. Test setup refuses real projects and preview ports. Never point tests at real Firebase.
+
+Optional Firebase browser/CDN integration has not been tested; passing emulator tests does not validate that integration.
 
 See docs/VALIDATION.md for the recorded checks and limitations and SECURITY.md for the security boundary. This is a reviewed demonstration source copy, not a production security certification.
 
