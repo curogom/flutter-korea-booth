@@ -1,0 +1,139 @@
+{
+  "@@locale": "en",
+  "appTitle": "Demo Booth Quiz",
+  "challenge": "DEMO CHALLENGE",
+  "invite": "Try four original demo questions.\nThis demo does not award prizes.",
+  "startQuiz": "Start the demo quiz",
+  "winRule": "3 out of 4 correct to win!",
+  "loadingQuestions": "Loading your questions…",
+  "questionsUnavailable": "The quiz is being prepared. Please ask a booth host.",
+  "loadError": "Could not load questions. Please check the connection.",
+  "home": "Back to start",
+  "confirmAnswer": "Check answer",
+  "selectPrompt": "Which answer looks right?",
+  "selectHelp": "Pick an answer, then check it.",
+  "changeHelp": "You can change your answer before checking.",
+  "correctFeedback": "Correct! One step forward.",
+  "incorrectFeedback": "That’s okay — you learned something!",
+  "nextQuestion": "Moving to the next question",
+  "showResults": "Moving to your results",
+  "dashWelcome": "Ready for a little number puzzle?",
+  "dashSelected": "Ready? Let’s check your answer.",
+  "dashCorrect": "Nice! Let’s take the next step together.",
+  "dashIncorrect": "Good effort. Let’s keep going!",
+  "correctCount": "correct",
+  "threeToWin": "Three to win!",
+  "selected": "Selected",
+  "successTitle": "You did it!",
+  "successSubtitle": "Demo challenge complete!",
+  "tryTitle": "Thanks for playing.",
+  "trySubtitle": "Keep moving forward!",
+  "successMessage": "One step forward, together!",
+  "tryMessage": "Keep practicing what you learned today.",
+  "nextPlayer": "Next player",
+  "language": "Language",
+  "admin": "Manage questions",
+  "sampleMode": "Sample mode",
+  "adminSignIn": "Host sign-in",
+  "email": "Email",
+  "password": "Password",
+  "signIn": "Sign in",
+  "signOut": "Sign out",
+  "accessDenied": "This account does not have question editor access.",
+  "refreshAccess": "Refresh access",
+  "authError": "Could not sign in. Please check your account details.",
+  "firebaseRequired": "Connect a Firebase project to add and edit questions.",
+  "addQuestion": "Add question",
+  "editQuestion": "Edit question",
+  "save": "Save",
+  "cancel": "Cancel",
+  "published": "Published",
+  "draft": "Draft",
+  "publishQuestion": "Publish for players",
+  "order": "Display order",
+  "correctAnswer": "Correct answer",
+  "questionPrompt": "Question",
+  "explanation": "Explanation",
+  "korean": "Korean",
+  "english": "English",
+  "requiredField": "This field is required.",
+  "invalidOrder": "Enter a whole number of zero or more.",
+  "saveError": "Could not save. Please check your access and connection.",
+  "saved": "Saved. Changes apply to the next player.",
+  "questionListError": "Could not load questions. Please check data format and permissions.",
+  "noQuestions": "No questions have been added yet.",
+  "archive": "Unpublish",
+  "publish": "Publish",
+  "adminNote": "Complete both Korean and English text and choices. The correct choice is shared across both languages.",
+  "leaveAdmin": "Return to quiz",
+  "setupError": "Please check the Firebase configuration.",
+  "retry": "Try again",
+  "questionNumber": "Question {number} / {total}",
+  "@questionNumber": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "resultScore": "{score} out of 4 correct.",
+  "@resultScore": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "selectedAnswer": "Selected: {answer}",
+  "@selectedAnswer": {
+    "placeholders": {
+      "answer": {
+        "type": "String"
+      }
+    }
+  },
+  "optionLabel": "Choice {letter}",
+  "@optionLabel": {
+    "placeholders": {
+      "letter": {
+        "type": "String"
+      }
+    }
+  },
+  "retryQuestions": "Try again",
+  "savedQuestionsNotice": "Using questions saved on this device.",
+  "operations": "Participation records",
+  "operationsHelp": "Shows this device’s records and the latest 500 server records.",
+  "shownRuns": "Displayed runs",
+  "completedRuns": "Completed",
+  "pendingSync": "Pending sync",
+  "recordsSyncError": "Device records are preserved. Check host sign-in, connectivity and records needing review, then sync again.",
+  "syncNow": "Sync now",
+  "noRunRecords": "No participation records yet.",
+  "inProgress": "In progress",
+  "interruptedRun": "Interrupted",
+  "swagPickup": "This is a demo. No prizes or rewards are issued.",
+  "passedRuns": "Passed",
+  "searchRun": "Search run ID",
+  "questionAccuracy": "Question accuracy",
+  "accuracyScope": "Combines device records with the latest 500 server runs. Counts confirmed answers, including answers from interrupted runs.",
+  "responseCount": "Responses",
+  "correctResponses": "Correct",
+  "incorrectResponses": "Incorrect",
+  "accuracyRate": "Accuracy",
+  "overallAccuracy": "Overall accuracy",
+  "runLanguage": "Last language of each run",
+  "allLanguages": "All",
+  "productionData": "Production data",
+  "testData": "Test data",
+  "accuracyPartialData": "Some records may be out of date. Figures use displayed data. Reload after the connection recovers.",
+  "noAccuracyData": "No questions or responses to report yet.",
+  "alreadyOpenTitle": "The quiz is open in another tab",
+  "alreadyOpenHelp": "Continue playing in the existing tab. If you have closed that tab, you can try again here.",
+  "startUnavailableTitle": "The quiz could not start safely",
+  "startUnavailableHelp": "Reload the page or use the latest Chrome. Ask a booth host if the problem continues.",
+  "recordsNeedReview": "Sync needs review"
+}

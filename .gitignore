@@ -1,0 +1,35 @@
+# Generated files and machine state
+.dart_tool/
+build/
+coverage/
+.flutter-plugins*
+.firebase/
+.idea/
+.vscode/
+.DS_Store
+*.iml
+*.log
+*.pyc
+__pycache__/
+node_modules/
+# Operational/private data, keys and local configuration
+.env
+.env.*
+!.env.example
+config/*.json
+!config/*.example.json
+!config/emulator.json
+.firebaserc
+*service-account*.json
+*serviceAccount*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+output/
+outputs/
+exports/
+backups/
+.release-*/

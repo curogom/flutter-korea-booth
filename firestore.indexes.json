@@ -1,0 +1,19 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "booth_runs",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "environment",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "startedAt",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

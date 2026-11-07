@@ -1,0 +1,22 @@
+{
+  "name": "demo-quiz-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:session": "node --test booth_session.test.mjs",
+    "test": "node --test --test-concurrency=1 firestore.test.mjs auth_firestore.test.mjs run_rules.test.mjs reporting_rules.test.mjs booth_session.test.mjs",
+    "test:emulators": "node run_emulator_tests.mjs"
+  },
+  "dependencies": {
+    "firebase-admin": "^14.5.0"
+  },
+  "devDependencies": {
+    "@firebase/rules-unit-testing": "^6.0.0",
+    "firebase": "^13.2.0"
+  },
+  "overrides": {
+    "@grpc/grpc-js": "^1.14.7",
+    "glob": "^14.0.3",
+    "minimatch": "^11.0.4"
+  }
+}

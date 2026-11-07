@@ -1,0 +1,94 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function editor() {
+      return request.auth != null && request.auth.token.get('quizAdmin', false) == true;
+    }
+    function label(value) { return value is string && value.trim().size() > 0 && value.size() <= 120; }
+    function translation(t) {
+      return t is map && t.keys().hasOnly(['prompt', 'explanation', 'options'])
+        && t.keys().hasAll(['prompt', 'explanation', 'options'])
+        && t.prompt is string && t.prompt.trim().size() > 0 && t.prompt.size() <= 500
+        && t.explanation is string && t.explanation.trim().size() > 0 && t.explanation.size() <= 1000
+        && t.options is map && t.options.keys().hasOnly(['a', 'b', 'c', 'd'])
+        && t.options.keys().hasAll(['a', 'b', 'c', 'd'])
+        && label(t.options.a) && label(t.options.b) && label(t.options.c) && label(t.options.d);
+    }
+    function question(q) {
+      return q.keys().hasOnly(['active', 'order', 'correctOptionId', 'translations', 'updatedAt'])
+        && q.keys().hasAll(['active', 'order', 'correctOptionId', 'translations', 'updatedAt'])
+        && q.active is bool && q.order is int && q.order >= 0 && q.order <= 1000000
+        && q.correctOptionId in ['a', 'b', 'c', 'd']
+        && q.translations is map && q.translations.keys().hasOnly(['ko', 'en'])
+        && q.translations.keys().hasAll(['ko', 'en'])
+        && translation(q.translations.ko) && translation(q.translations.en)
+        && q.updatedAt == request.time;
+    }
+    match /questions/{questionId} {
+      allow read: if editor() || resource.data.active == true;
+      allow create, update: if editor() && question(request.resource.data);
+      allow delete: if editor();
+    }
+    match /event_settings/reporting {
+      allow get: if editor();
+      allow create, update: if editor()
+        && request.resource.data.keys().hasOnly(['timeZone','environment','startsAt','endsAt','updatedAt'])
+        && request.resource.data.keys().hasAll(['timeZone','environment','startsAt','endsAt','updatedAt'])
+        && request.resource.data.timeZone == 'Asia/Seoul'
+        && request.resource.data.environment in ['production','development','emulator']
+        && request.resource.data.startsAt is timestamp
+        && request.resource.data.endsAt is timestamp
+        && request.resource.data.endsAt > request.resource.data.startsAt
+        && request.resource.data.updatedAt == request.time;
+      allow delete: if false;
+    }
+    function computedScore(q) {
+      return (q.answers.size()>0 && q.answers[0]==q.correctAnswers[0] ? 1 : 0)
+        + (q.answers.size()>1 && q.answers[1]==q.correctAnswers[1] ? 1 : 0)
+        + (q.answers.size()>2 && q.answers[2]==q.correctAnswers[2] ? 1 : 0)
+        + (q.answers.size()>3 && q.answers[3]==q.correctAnswers[3] ? 1 : 0);
+    }
+    function validRun(q) {
+      // Legacy collection metadata remains readable on existing documents.
+      // New records and updates cannot create or modify those fields.
+      return q.keys().hasOnly(['environment','startedAt','finishedAt','language','status','questionIds','correctAnswers','answers','version','durationMs','catalogRevision','score','passed','updatedAt','claimedAt','claimedBy'])
+        && q.keys().hasAll(['environment','startedAt','finishedAt','language','status','questionIds','correctAnswers','answers','version','durationMs','catalogRevision','score','passed','updatedAt'])
+        && q.environment in ['production','development','emulator'] && q.language in ['ko','en']
+        && q.startedAt is timestamp && (q.finishedAt==null || q.finishedAt is timestamp)
+        && q.status in ['started','completed','abandoned','interrupted']
+        && q.questionIds is list && q.questionIds.size()==4
+        && q.correctAnswers is list && q.correctAnswers.size()==4 && q.correctAnswers.hasOnly(['a','b','c','d'])
+        && q.answers is list && q.answers.size()<=4 && q.answers.hasOnly(['a','b','c','d'])
+        && (q.status!='completed' || q.answers.size()==4)
+        && q.version is int && q.version>0 && q.version<=100000
+        && q.durationMs is int && q.durationMs>=0
+        && q.catalogRevision is string && q.catalogRevision.size()<=100
+        && q.score is int && q.score==computedScore(q)
+        && q.passed is bool && q.passed==(q.status=='completed' && q.score>=3)
+        && q.updatedAt==request.time;
+    }
+    function sameRun(old,q) {
+      return old.environment==q.environment && old.startedAt==q.startedAt
+        && old.questionIds==q.questionIds && old.correctAnswers==q.correctAnswers
+        && old.catalogRevision==q.catalogRevision;
+    }
+    function answersExtend(old,q) {
+      return q.answers.size()>=old.answers.size()
+        && (old.answers.size()<1 || old.answers[0]==q.answers[0])
+        && (old.answers.size()<2 || old.answers[1]==q.answers[1])
+        && (old.answers.size()<3 || old.answers[2]==q.answers[2])
+        && (old.answers.size()<4 || old.answers[3]==q.answers[3]);
+    }
+    match /booth_runs/{runId} {
+      allow read: if editor();
+      allow create: if editor() && validRun(request.resource.data)
+        && !request.resource.data.keys().hasAny(['claimedAt','claimedBy']);
+      allow update: if editor() && validRun(request.resource.data)
+        && resource.data.status=='started' && request.resource.data.version>resource.data.version
+          && sameRun(resource.data,request.resource.data) && answersExtend(resource.data,request.resource.data)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','finishedAt','language','answers','version','durationMs','score','passed','updatedAt']);
+      allow delete: if false;
+    }
+    match /{document=**} { allow read, write: if false; }
+  }
+}

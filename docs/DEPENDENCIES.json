@@ -1,0 +1,1860 @@
+{
+  "advisory_audit": "Not run: offline preparation, no live advisory lookup",
+  "dart": [
+    {
+      "name": "_flutterfire_internals",
+      "version": "1.3.79",
+      "source": "hosted"
+    },
+    {
+      "name": "args",
+      "version": "2.7.0",
+      "source": "hosted"
+    },
+    {
+      "name": "async",
+      "version": "2.13.1",
+      "source": "hosted"
+    },
+    {
+      "name": "boolean_selector",
+      "version": "2.1.2",
+      "source": "hosted"
+    },
+    {
+      "name": "characters",
+      "version": "1.4.1",
+      "source": "hosted"
+    },
+    {
+      "name": "clock",
+      "version": "1.1.3",
+      "source": "hosted"
+    },
+    {
+      "name": "cloud_firestore",
+      "version": "7.1.0",
+      "source": "hosted"
+    },
+    {
+      "name": "cloud_firestore_platform_interface",
+      "version": "8.1.0",
+      "source": "hosted"
+    },
+    {
+      "name": "cloud_firestore_web",
+      "version": "5.8.0",
+      "source": "hosted"
+    },
+    {
+      "name": "code_assets",
+      "version": "1.2.1",
+      "source": "hosted"
+    },
+    {
+      "name": "collection",
+      "version": "1.19.1",
+      "source": "hosted"
+    },
+    {
+      "name": "crypto",
+      "version": "3.0.8",
+      "source": "hosted"
+    },
+    {
+      "name": "cupertino_icons",
+      "version": "1.0.9",
+      "source": "hosted"
+    },
+    {
+      "name": "fake_async",
+      "version": "1.3.3",
+      "source": "hosted"
+    },
+    {
+      "name": "ffi",
+      "version": "2.2.0",
+      "source": "hosted"
+    },
+    {
+      "name": "file",
+      "version": "7.0.1",
+      "source": "hosted"
+    },
+    {
+      "name": "firebase_analytics",
+      "version": "13.0.1",
+      "source": "hosted"
+    },
+    {
+      "name": "firebase_analytics_platform_interface",
+      "version": "6.0.9",
+      "source": "hosted"
+    },
+    {
+      "name": "firebase_analytics_web",
+      "version": "0.6.3+15",
+      "source": "hosted"
+    },
+    {
+      "name": "firebase_auth",
+      "version": "7.0.1",
+      "source": "hosted"
+    },
+    {
+      "name": "firebase_auth_platform_interface",
+      "version": "9.1.2",
+      "source": "hosted"
+    },
+    {
+      "name": "firebase_auth_web",
+      "version": "6.3.2",
+      "source": "hosted"
+    },
+    {
+      "name": "firebase_core",
+      "version": "5.1.0",
+      "source": "hosted"
+    },
+    {
+      "name": "firebase_core_platform_interface",
+      "version": "8.1.1",
+      "source": "hosted"
+    },
+    {
+      "name": "firebase_core_web",
+      "version": "4.1.0",
+      "source": "hosted"
+    },
+    {
+      "name": "flutter",
+      "version": "0.0.0",
+      "source": "sdk"
+    },
+    {
+      "name": "flutter_lints",
+      "version": "6.0.0",
+      "source": "hosted"
+    },
+    {
+      "name": "flutter_localizations",
+      "version": "0.0.0",
+      "source": "sdk"
+    },
+    {
+      "name": "flutter_test",
+      "version": "0.0.0",
+      "source": "sdk"
+    },
+    {
+      "name": "flutter_web_plugins",
+      "version": "0.0.0",
+      "source": "sdk"
+    },
+    {
+      "name": "hooks",
+      "version": "2.0.2",
+      "source": "hosted"
+    },
+    {
+      "name": "http",
+      "version": "1.6.0",
+      "source": "hosted"
+    },
+    {
+      "name": "http_parser",
+      "version": "4.1.2",
+      "source": "hosted"
+    },
+    {
+      "name": "idb_shim",
+      "version": "2.11.2",
+      "source": "hosted"
+    },
+    {
+      "name": "intl",
+      "version": "0.20.3",
+      "source": "hosted"
+    },
+    {
+      "name": "jni",
+      "version": "1.1.2",
+      "source": "hosted"
+    },
+    {
+      "name": "jni_flutter",
+      "version": "1.0.4+1",
+      "source": "hosted"
+    },
+    {
+      "name": "jni_util",
+      "version": "1.0.0",
+      "source": "hosted"
+    },
+    {
+      "name": "leak_tracker",
+      "version": "11.0.2",
+      "source": "hosted"
+    },
+    {
+      "name": "leak_tracker_flutter_testing",
+      "version": "3.0.10",
+      "source": "hosted"
+    },
+    {
+      "name": "leak_tracker_testing",
+      "version": "3.0.2",
+      "source": "hosted"
+    },
+    {
+      "name": "lints",
+      "version": "6.1.0",
+      "source": "hosted"
+    },
+    {
+      "name": "logging",
+      "version": "1.3.0",
+      "source": "hosted"
+    },
+    {
+      "name": "matcher",
+      "version": "0.12.20",
+      "source": "hosted"
+    },
+    {
+      "name": "material_color_utilities",
+      "version": "0.13.0",
+      "source": "hosted"
+    },
+    {
+      "name": "meta",
+      "version": "1.18.3",
+      "source": "hosted"
+    },
+    {
+      "name": "objective_c",
+      "version": "9.5.0",
+      "source": "hosted"
+    },
+    {
+      "name": "package_config",
+      "version": "3.0.0",
+      "source": "hosted"
+    },
+    {
+      "name": "path",
+      "version": "1.9.1",
+      "source": "hosted"
+    },
+    {
+      "name": "path_provider",
+      "version": "2.1.6",
+      "source": "hosted"
+    },
+    {
+      "name": "path_provider_android",
+      "version": "2.3.1",
+      "source": "hosted"
+    },
+    {
+      "name": "path_provider_foundation",
+      "version": "2.6.0",
+      "source": "hosted"
+    },
+    {
+      "name": "path_provider_linux",
+      "version": "2.2.2",
+      "source": "hosted"
+    },
+    {
+      "name": "path_provider_platform_interface",
+      "version": "2.1.3",
+      "source": "hosted"
+    },
+    {
+      "name": "path_provider_windows",
+      "version": "2.3.0",
+      "source": "hosted"
+    },
+    {
+      "name": "platform",
+      "version": "3.2.0",
+      "source": "hosted"
+    },
+    {
+      "name": "plugin_platform_interface",
+      "version": "2.1.8",
+      "source": "hosted"
+    },
+    {
+      "name": "pub_semver",
+      "version": "2.2.1",
+      "source": "hosted"
+    },
+    {
+      "name": "record_use",
+      "version": "0.6.0",
+      "source": "hosted"
+    },
+    {
+      "name": "sembast",
+      "version": "3.10.0",
+      "source": "hosted"
+    },
+    {
+      "name": "sembast_web",
+      "version": "2.4.6+1",
+      "source": "hosted"
+    },
+    {
+      "name": "shared_preferences",
+      "version": "2.5.6",
+      "source": "hosted"
+    },
+    {
+      "name": "shared_preferences_android",
+      "version": "2.5.4",
+      "source": "hosted"
+    },
+    {
+      "name": "shared_preferences_foundation",
+      "version": "2.5.7",
+      "source": "hosted"
+    },
+    {
+      "name": "shared_preferences_linux",
+      "version": "2.4.1",
+      "source": "hosted"
+    },
+    {
+      "name": "shared_preferences_platform_interface",
+      "version": "2.4.2",
+      "source": "hosted"
+    },
+    {
+      "name": "shared_preferences_web",
+      "version": "2.4.3",
+      "source": "hosted"
+    },
+    {
+      "name": "shared_preferences_windows",
+      "version": "2.4.1",
+      "source": "hosted"
+    },
+    {
+      "name": "sky_engine",
+      "version": "0.0.0",
+      "source": "sdk"
+    },
+    {
+      "name": "source_span",
+      "version": "1.10.2",
+      "source": "hosted"
+    },
+    {
+      "name": "stack_trace",
+      "version": "1.12.2",
+      "source": "hosted"
+    },
+    {
+      "name": "stream_channel",
+      "version": "2.1.4",
+      "source": "hosted"
+    },
+    {
+      "name": "string_scanner",
+      "version": "1.4.1",
+      "source": "hosted"
+    },
+    {
+      "name": "synchronized",
+      "version": "3.5.0",
+      "source": "hosted"
+    },
+    {
+      "name": "term_glyph",
+      "version": "1.2.2",
+      "source": "hosted"
+    },
+    {
+      "name": "test_api",
+      "version": "0.7.12",
+      "source": "hosted"
+    },
+    {
+      "name": "typed_data",
+      "version": "1.4.0",
+      "source": "hosted"
+    },
+    {
+      "name": "vector_math",
+      "version": "2.4.0",
+      "source": "hosted"
+    },
+    {
+      "name": "vm_service",
+      "version": "15.4.0",
+      "source": "hosted"
+    },
+    {
+      "name": "web",
+      "version": "1.1.2",
+      "source": "hosted"
+    },
+    {
+      "name": "xdg_directories",
+      "version": "1.1.0",
+      "source": "hosted"
+    },
+    {
+      "name": "yaml",
+      "version": "3.1.4",
+      "source": "hosted"
+    }
+  ],
+  "node": [
+    {
+      "path": "node_modules/@fastify/busboy",
+      "name": "@fastify/busboy",
+      "version": "3.2.4",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/@firebase/ai",
+      "name": "@firebase/ai",
+      "version": "3.0.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/analytics",
+      "name": "@firebase/analytics",
+      "version": "0.10.25",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/analytics-compat",
+      "name": "@firebase/analytics-compat",
+      "version": "0.2.31",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/analytics-types",
+      "name": "@firebase/analytics-types",
+      "version": "0.8.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/app",
+      "name": "@firebase/app",
+      "version": "0.16.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/app-check",
+      "name": "@firebase/app-check",
+      "version": "0.13.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/app-check-compat",
+      "name": "@firebase/app-check-compat",
+      "version": "0.4.7",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/app-check-interop-types",
+      "name": "@firebase/app-check-interop-types",
+      "version": "0.3.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/app-check-types",
+      "name": "@firebase/app-check-types",
+      "version": "0.5.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/app-compat",
+      "name": "@firebase/app-compat",
+      "version": "0.5.21",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/app-types",
+      "name": "@firebase/app-types",
+      "version": "0.9.6",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/auth",
+      "name": "@firebase/auth",
+      "version": "1.13.9",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/auth-compat",
+      "name": "@firebase/auth-compat",
+      "version": "0.6.14",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/auth-interop-types",
+      "name": "@firebase/auth-interop-types",
+      "version": "0.2.6",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/auth-types",
+      "name": "@firebase/auth-types",
+      "version": "0.13.2",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/component",
+      "name": "@firebase/component",
+      "version": "0.7.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/crashlytics",
+      "name": "@firebase/crashlytics",
+      "version": "0.1.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/data-connect",
+      "name": "@firebase/data-connect",
+      "version": "0.7.4",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/database",
+      "name": "@firebase/database",
+      "version": "1.1.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/database-compat",
+      "name": "@firebase/database-compat",
+      "version": "2.1.7",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/database-types",
+      "name": "@firebase/database-types",
+      "version": "1.0.22",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/firestore",
+      "name": "@firebase/firestore",
+      "version": "4.19.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/firestore-compat",
+      "name": "@firebase/firestore-compat",
+      "version": "0.4.17",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/firestore-types",
+      "name": "@firebase/firestore-types",
+      "version": "3.0.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/functions",
+      "name": "@firebase/functions",
+      "version": "0.14.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/functions-compat",
+      "name": "@firebase/functions-compat",
+      "version": "0.5.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/functions-types",
+      "name": "@firebase/functions-types",
+      "version": "0.6.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/installations",
+      "name": "@firebase/installations",
+      "version": "0.6.24",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/installations-compat",
+      "name": "@firebase/installations-compat",
+      "version": "0.2.24",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/installations-types",
+      "name": "@firebase/installations-types",
+      "version": "0.5.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/logger",
+      "name": "@firebase/logger",
+      "version": "0.5.2",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/messaging",
+      "name": "@firebase/messaging",
+      "version": "0.13.3",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/messaging-compat",
+      "name": "@firebase/messaging-compat",
+      "version": "0.2.30",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/messaging-interop-types",
+      "name": "@firebase/messaging-interop-types",
+      "version": "0.2.6",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/performance",
+      "name": "@firebase/performance",
+      "version": "0.7.14",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/performance-compat",
+      "name": "@firebase/performance-compat",
+      "version": "0.2.27",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/performance-types",
+      "name": "@firebase/performance-types",
+      "version": "0.2.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/remote-config",
+      "name": "@firebase/remote-config",
+      "version": "0.9.3",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/remote-config-compat",
+      "name": "@firebase/remote-config-compat",
+      "version": "0.2.30",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/remote-config-types",
+      "name": "@firebase/remote-config-types",
+      "version": "0.5.2",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/rules-unit-testing",
+      "name": "@firebase/rules-unit-testing",
+      "version": "6.0.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/storage",
+      "name": "@firebase/storage",
+      "version": "0.14.6",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/storage-compat",
+      "name": "@firebase/storage-compat",
+      "version": "0.4.6",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/storage-types",
+      "name": "@firebase/storage-types",
+      "version": "0.8.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/util",
+      "name": "@firebase/util",
+      "version": "1.15.3",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@firebase/webchannel-wrapper",
+      "name": "@firebase/webchannel-wrapper",
+      "version": "1.0.7",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore",
+      "name": "@google-cloud/firestore",
+      "version": "9.4.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore-api",
+      "name": "@google-cloud/firestore-api",
+      "version": "0.2.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore-api/node_modules/@grpc/proto-loader",
+      "name": "@google-cloud/firestore-api/node_modules/@grpc/proto-loader",
+      "version": "0.8.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore-api/node_modules/gaxios",
+      "name": "@google-cloud/firestore-api/node_modules/gaxios",
+      "version": "7.1.3",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore-api/node_modules/gcp-metadata",
+      "name": "@google-cloud/firestore-api/node_modules/gcp-metadata",
+      "version": "8.1.4",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore-api/node_modules/google-auth-library",
+      "name": "@google-cloud/firestore-api/node_modules/google-auth-library",
+      "version": "10.5.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore-api/node_modules/google-gax",
+      "name": "@google-cloud/firestore-api/node_modules/google-gax",
+      "version": "5.0.8",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore-api/node_modules/google-logging-utils",
+      "name": "@google-cloud/firestore-api/node_modules/google-logging-utils",
+      "version": "1.1.3",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore-api/node_modules/proto3-json-serializer",
+      "name": "@google-cloud/firestore-api/node_modules/proto3-json-serializer",
+      "version": "3.0.4",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore-api/node_modules/retry-request",
+      "name": "@google-cloud/firestore-api/node_modules/retry-request",
+      "version": "8.0.4",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/@google-cloud/firestore-api/node_modules/teeny-request",
+      "name": "@google-cloud/firestore-api/node_modules/teeny-request",
+      "version": "10.1.4",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/paginator",
+      "name": "@google-cloud/paginator",
+      "version": "7.2.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/projectify",
+      "name": "@google-cloud/projectify",
+      "version": "6.2.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/promisify",
+      "name": "@google-cloud/promisify",
+      "version": "6.2.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@google-cloud/storage",
+      "name": "@google-cloud/storage",
+      "version": "8.4.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@grpc/grpc-js",
+      "name": "@grpc/grpc-js",
+      "version": "1.14.7",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@grpc/grpc-js/node_modules/@grpc/proto-loader",
+      "name": "@grpc/grpc-js/node_modules/@grpc/proto-loader",
+      "version": "0.8.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@grpc/proto-loader",
+      "name": "@grpc/proto-loader",
+      "version": "0.7.15",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@isaacs/nonrecursive-glob-match",
+      "name": "@isaacs/nonrecursive-glob-match",
+      "version": "1.0.3",
+      "license": "BlueOak-1.0.0"
+    },
+    {
+      "path": "node_modules/@js-sdsl/ordered-map",
+      "name": "@js-sdsl/ordered-map",
+      "version": "4.4.2",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/@nodable/entities",
+      "name": "@nodable/entities",
+      "version": "3.1.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/@opentelemetry/api",
+      "name": "@opentelemetry/api",
+      "version": "1.9.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/api-logs",
+      "name": "@opentelemetry/api-logs",
+      "version": "0.220.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/browser-instrumentation",
+      "name": "@opentelemetry/browser-instrumentation",
+      "version": "0.6.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/browser-instrumentation/node_modules/web-vitals",
+      "name": "@opentelemetry/browser-instrumentation/node_modules/web-vitals",
+      "version": "5.3.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/core",
+      "name": "@opentelemetry/core",
+      "version": "2.10.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/exporter-logs-otlp-http",
+      "name": "@opentelemetry/exporter-logs-otlp-http",
+      "version": "0.220.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/exporter-logs-otlp-http/node_modules/@opentelemetry/core",
+      "name": "@opentelemetry/exporter-logs-otlp-http/node_modules/@opentelemetry/core",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/exporter-trace-otlp-proto",
+      "name": "@opentelemetry/exporter-trace-otlp-proto",
+      "version": "0.220.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/exporter-trace-otlp-proto/node_modules/@opentelemetry/core",
+      "name": "@opentelemetry/exporter-trace-otlp-proto/node_modules/@opentelemetry/core",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/exporter-trace-otlp-proto/node_modules/@opentelemetry/resources",
+      "name": "@opentelemetry/exporter-trace-otlp-proto/node_modules/@opentelemetry/resources",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation",
+      "name": "@opentelemetry/instrumentation",
+      "version": "0.220.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-document-load",
+      "name": "@opentelemetry/instrumentation-document-load",
+      "version": "0.65.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-fetch",
+      "name": "@opentelemetry/instrumentation-fetch",
+      "version": "0.220.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-fetch/node_modules/@opentelemetry/core",
+      "name": "@opentelemetry/instrumentation-fetch/node_modules/@opentelemetry/core",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-fetch/node_modules/@opentelemetry/resources",
+      "name": "@opentelemetry/instrumentation-fetch/node_modules/@opentelemetry/resources",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-fetch/node_modules/@opentelemetry/sdk-trace-base",
+      "name": "@opentelemetry/instrumentation-fetch/node_modules/@opentelemetry/sdk-trace-base",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-fetch/node_modules/@opentelemetry/sdk-trace-web",
+      "name": "@opentelemetry/instrumentation-fetch/node_modules/@opentelemetry/sdk-trace-web",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-xml-http-request",
+      "name": "@opentelemetry/instrumentation-xml-http-request",
+      "version": "0.220.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-xml-http-request/node_modules/@opentelemetry/core",
+      "name": "@opentelemetry/instrumentation-xml-http-request/node_modules/@opentelemetry/core",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-xml-http-request/node_modules/@opentelemetry/resources",
+      "name": "@opentelemetry/instrumentation-xml-http-request/node_modules/@opentelemetry/resources",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-xml-http-request/node_modules/@opentelemetry/sdk-trace-base",
+      "name": "@opentelemetry/instrumentation-xml-http-request/node_modules/@opentelemetry/sdk-trace-base",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/instrumentation-xml-http-request/node_modules/@opentelemetry/sdk-trace-web",
+      "name": "@opentelemetry/instrumentation-xml-http-request/node_modules/@opentelemetry/sdk-trace-web",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/otlp-exporter-base",
+      "name": "@opentelemetry/otlp-exporter-base",
+      "version": "0.220.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/otlp-exporter-base/node_modules/@opentelemetry/core",
+      "name": "@opentelemetry/otlp-exporter-base/node_modules/@opentelemetry/core",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/otlp-transformer",
+      "name": "@opentelemetry/otlp-transformer",
+      "version": "0.220.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/core",
+      "name": "@opentelemetry/otlp-transformer/node_modules/@opentelemetry/core",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/resources",
+      "name": "@opentelemetry/otlp-transformer/node_modules/@opentelemetry/resources",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/resources",
+      "name": "@opentelemetry/resources",
+      "version": "2.10.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-logs",
+      "name": "@opentelemetry/sdk-logs",
+      "version": "0.220.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-logs/node_modules/@opentelemetry/core",
+      "name": "@opentelemetry/sdk-logs/node_modules/@opentelemetry/core",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-logs/node_modules/@opentelemetry/resources",
+      "name": "@opentelemetry/sdk-logs/node_modules/@opentelemetry/resources",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-metrics",
+      "name": "@opentelemetry/sdk-metrics",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-metrics/node_modules/@opentelemetry/core",
+      "name": "@opentelemetry/sdk-metrics/node_modules/@opentelemetry/core",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-metrics/node_modules/@opentelemetry/resources",
+      "name": "@opentelemetry/sdk-metrics/node_modules/@opentelemetry/resources",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-trace",
+      "name": "@opentelemetry/sdk-trace",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-trace-base",
+      "name": "@opentelemetry/sdk-trace-base",
+      "version": "2.10.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-trace-base/node_modules/@opentelemetry/sdk-trace",
+      "name": "@opentelemetry/sdk-trace-base/node_modules/@opentelemetry/sdk-trace",
+      "version": "2.10.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-trace-web",
+      "name": "@opentelemetry/sdk-trace-web",
+      "version": "2.10.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-trace/node_modules/@opentelemetry/core",
+      "name": "@opentelemetry/sdk-trace/node_modules/@opentelemetry/core",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/sdk-trace/node_modules/@opentelemetry/resources",
+      "name": "@opentelemetry/sdk-trace/node_modules/@opentelemetry/resources",
+      "version": "2.9.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@opentelemetry/semantic-conventions",
+      "name": "@opentelemetry/semantic-conventions",
+      "version": "1.43.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@protobufjs/aspromise",
+      "name": "@protobufjs/aspromise",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/@protobufjs/base64",
+      "name": "@protobufjs/base64",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/@protobufjs/codegen",
+      "name": "@protobufjs/codegen",
+      "version": "2.0.5",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/@protobufjs/eventemitter",
+      "name": "@protobufjs/eventemitter",
+      "version": "1.1.1",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/@protobufjs/fetch",
+      "name": "@protobufjs/fetch",
+      "version": "1.1.1",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/@protobufjs/float",
+      "name": "@protobufjs/float",
+      "version": "1.0.2",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/@protobufjs/path",
+      "name": "@protobufjs/path",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/@protobufjs/pool",
+      "name": "@protobufjs/pool",
+      "version": "1.1.0",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/@protobufjs/utf8",
+      "name": "@protobufjs/utf8",
+      "version": "1.1.2",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/@types/jsonwebtoken",
+      "name": "@types/jsonwebtoken",
+      "version": "9.0.10",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/@types/ms",
+      "name": "@types/ms",
+      "version": "2.1.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/@types/node",
+      "name": "@types/node",
+      "version": "26.6.6",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/abort-controller",
+      "name": "abort-controller",
+      "version": "3.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/agent-base",
+      "name": "agent-base",
+      "version": "7.1.4",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/ansi-regex",
+      "name": "ansi-regex",
+      "version": "5.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/ansi-styles",
+      "name": "ansi-styles",
+      "version": "4.3.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/anynum",
+      "name": "anynum",
+      "version": "1.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/async-retry",
+      "name": "async-retry",
+      "version": "1.3.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/balanced-match",
+      "name": "balanced-match",
+      "version": "4.0.4",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/base64-js",
+      "name": "base64-js",
+      "version": "1.5.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/bignumber.js",
+      "name": "bignumber.js",
+      "version": "9.3.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/brace-expansion",
+      "name": "brace-expansion",
+      "version": "5.0.12",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/buffer-equal-constant-time",
+      "name": "buffer-equal-constant-time",
+      "version": "1.0.1",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/cjs-module-lexer",
+      "name": "cjs-module-lexer",
+      "version": "2.3.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/cliui",
+      "name": "cliui",
+      "version": "8.0.1",
+      "license": "ISC"
+    },
+    {
+      "path": "node_modules/color-convert",
+      "name": "color-convert",
+      "version": "2.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/color-name",
+      "name": "color-name",
+      "version": "1.1.4",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/data-uri-to-buffer",
+      "name": "data-uri-to-buffer",
+      "version": "4.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/debug",
+      "name": "debug",
+      "version": "4.4.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/duplexify",
+      "name": "duplexify",
+      "version": "4.1.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/ecdsa-sig-formatter",
+      "name": "ecdsa-sig-formatter",
+      "version": "1.0.11",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/emoji-regex",
+      "name": "emoji-regex",
+      "version": "8.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/end-of-stream",
+      "name": "end-of-stream",
+      "version": "1.4.5",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/es-module-lexer",
+      "name": "es-module-lexer",
+      "version": "3.0.4",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/escalade",
+      "name": "escalade",
+      "version": "3.2.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/event-target-shim",
+      "name": "event-target-shim",
+      "version": "5.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/extend",
+      "name": "extend",
+      "version": "3.0.2",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/fast-deep-equal",
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/fast-xml-builder",
+      "name": "fast-xml-builder",
+      "version": "1.3.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/fast-xml-parser",
+      "name": "fast-xml-parser",
+      "version": "5.12.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/faye-websocket",
+      "name": "faye-websocket",
+      "version": "0.11.4",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/fetch-blob",
+      "name": "fetch-blob",
+      "version": "3.2.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/firebase",
+      "name": "firebase",
+      "version": "13.2.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/firebase-admin",
+      "name": "firebase-admin",
+      "version": "14.5.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/formdata-polyfill",
+      "name": "formdata-polyfill",
+      "version": "4.0.10",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/functional-red-black-tree",
+      "name": "functional-red-black-tree",
+      "version": "1.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/gaxios",
+      "name": "gaxios",
+      "version": "7.3.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/gcp-metadata",
+      "name": "gcp-metadata",
+      "version": "9.2.3",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/gcp-metadata/node_modules/gaxios",
+      "name": "gcp-metadata/node_modules/gaxios",
+      "version": "8.3.2",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/get-caller-file",
+      "name": "get-caller-file",
+      "version": "2.0.5",
+      "license": "ISC"
+    },
+    {
+      "path": "node_modules/glob",
+      "name": "glob",
+      "version": "14.0.3",
+      "license": "BlueOak-1.0.0"
+    },
+    {
+      "path": "node_modules/google-auth-library",
+      "name": "google-auth-library",
+      "version": "11.3.3",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/google-auth-library/node_modules/gaxios",
+      "name": "google-auth-library/node_modules/gaxios",
+      "version": "8.3.2",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/google-gax",
+      "name": "google-gax",
+      "version": "6.16.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/google-gax/node_modules/@grpc/proto-loader",
+      "name": "google-gax/node_modules/@grpc/proto-loader",
+      "version": "0.8.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/google-logging-utils",
+      "name": "google-logging-utils",
+      "version": "2.1.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/gtoken",
+      "name": "gtoken",
+      "version": "8.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/html-entities",
+      "name": "html-entities",
+      "version": "2.6.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/http-parser-js",
+      "name": "http-parser-js",
+      "version": "0.5.10",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/http-proxy-agent",
+      "name": "http-proxy-agent",
+      "version": "7.0.2",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/https-proxy-agent",
+      "name": "https-proxy-agent",
+      "version": "7.0.6",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/idb",
+      "name": "idb",
+      "version": "7.1.1",
+      "license": "ISC"
+    },
+    {
+      "path": "node_modules/import-in-the-middle",
+      "name": "import-in-the-middle",
+      "version": "3.5.3",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/inherits",
+      "name": "inherits",
+      "version": "2.0.4",
+      "license": "ISC"
+    },
+    {
+      "path": "node_modules/is-fullwidth-code-point",
+      "name": "is-fullwidth-code-point",
+      "version": "3.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/is-unsafe",
+      "name": "is-unsafe",
+      "version": "2.0.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/jose",
+      "name": "jose",
+      "version": "6.2.15",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/json-bigint",
+      "name": "json-bigint",
+      "version": "1.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/jsonwebtoken",
+      "name": "jsonwebtoken",
+      "version": "9.0.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/jwa",
+      "name": "jwa",
+      "version": "2.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/jwks-rsa",
+      "name": "jwks-rsa",
+      "version": "4.1.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/jws",
+      "name": "jws",
+      "version": "4.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/limiter",
+      "name": "limiter",
+      "version": "1.1.5",
+      "license": "not declared in lockfile"
+    },
+    {
+      "path": "node_modules/lodash.camelcase",
+      "name": "lodash.camelcase",
+      "version": "4.3.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/lodash.clonedeep",
+      "name": "lodash.clonedeep",
+      "version": "4.5.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/lodash.includes",
+      "name": "lodash.includes",
+      "version": "4.3.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/lodash.isboolean",
+      "name": "lodash.isboolean",
+      "version": "3.0.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/lodash.isinteger",
+      "name": "lodash.isinteger",
+      "version": "4.0.4",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/lodash.isnumber",
+      "name": "lodash.isnumber",
+      "version": "3.0.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/lodash.isplainobject",
+      "name": "lodash.isplainobject",
+      "version": "4.0.6",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/lodash.isstring",
+      "name": "lodash.isstring",
+      "version": "4.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/lodash.once",
+      "name": "lodash.once",
+      "version": "4.1.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/long",
+      "name": "long",
+      "version": "5.3.2",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/lru-cache",
+      "name": "lru-cache",
+      "version": "11.5.3",
+      "license": "BlueOak-1.0.0"
+    },
+    {
+      "path": "node_modules/lru-memoizer",
+      "name": "lru-memoizer",
+      "version": "3.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/mime",
+      "name": "mime",
+      "version": "3.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/minimatch",
+      "name": "minimatch",
+      "version": "11.0.4",
+      "license": "BlueOak-1.0.0"
+    },
+    {
+      "path": "node_modules/minipass",
+      "name": "minipass",
+      "version": "7.1.3",
+      "license": "BlueOak-1.0.0"
+    },
+    {
+      "path": "node_modules/module-details-from-path",
+      "name": "module-details-from-path",
+      "version": "1.0.4",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/ms",
+      "name": "ms",
+      "version": "2.1.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/node-domexception",
+      "name": "node-domexception",
+      "version": "1.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/node-fetch",
+      "name": "node-fetch",
+      "version": "3.3.2",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/object-hash",
+      "name": "object-hash",
+      "version": "3.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/once",
+      "name": "once",
+      "version": "1.4.0",
+      "license": "ISC"
+    },
+    {
+      "path": "node_modules/p-limit",
+      "name": "p-limit",
+      "version": "3.1.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/path-expression-matcher",
+      "name": "path-expression-matcher",
+      "version": "1.6.2",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/path-scurry",
+      "name": "path-scurry",
+      "version": "3.0.0",
+      "license": "BlueOak-1.0.0"
+    },
+    {
+      "path": "node_modules/proto3-json-serializer",
+      "name": "proto3-json-serializer",
+      "version": "4.1.0",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/protobufjs",
+      "name": "protobufjs",
+      "version": "7.6.6",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/re2js",
+      "name": "re2js",
+      "version": "2.9.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/readable-stream",
+      "name": "readable-stream",
+      "version": "3.6.2",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/require-directory",
+      "name": "require-directory",
+      "version": "2.1.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/require-in-the-middle",
+      "name": "require-in-the-middle",
+      "version": "8.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/retry",
+      "name": "retry",
+      "version": "0.13.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/retry-request",
+      "name": "retry-request",
+      "version": "9.1.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/rimraf",
+      "name": "rimraf",
+      "version": "5.0.10",
+      "license": "ISC"
+    },
+    {
+      "path": "node_modules/safe-buffer",
+      "name": "safe-buffer",
+      "version": "5.2.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/semver",
+      "name": "semver",
+      "version": "7.8.6",
+      "license": "ISC"
+    },
+    {
+      "path": "node_modules/stream-events",
+      "name": "stream-events",
+      "version": "1.0.5",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/stream-shift",
+      "name": "stream-shift",
+      "version": "1.0.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/string_decoder",
+      "name": "string_decoder",
+      "version": "1.3.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/string-width",
+      "name": "string-width",
+      "version": "4.2.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/strip-ansi",
+      "name": "strip-ansi",
+      "version": "6.0.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/strnum",
+      "name": "strnum",
+      "version": "2.5.1",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/stubs",
+      "name": "stubs",
+      "version": "3.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/teeny-request",
+      "name": "teeny-request",
+      "version": "11.1.1",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/tslib",
+      "name": "tslib",
+      "version": "2.9.1",
+      "license": "0BSD"
+    },
+    {
+      "path": "node_modules/undici-types",
+      "name": "undici-types",
+      "version": "8.9.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/util-deprecate",
+      "name": "util-deprecate",
+      "version": "1.0.2",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/web-streams-polyfill",
+      "name": "web-streams-polyfill",
+      "version": "3.3.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/web-vitals",
+      "name": "web-vitals",
+      "version": "4.2.4",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/websocket-driver",
+      "name": "websocket-driver",
+      "version": "0.7.5",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/websocket-extensions",
+      "name": "websocket-extensions",
+      "version": "0.1.4",
+      "license": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/wrap-ansi",
+      "name": "wrap-ansi",
+      "version": "7.0.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/wrappy",
+      "name": "wrappy",
+      "version": "1.0.2",
+      "license": "ISC"
+    },
+    {
+      "path": "node_modules/xml-naming",
+      "name": "xml-naming",
+      "version": "0.3.0",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/y18n",
+      "name": "y18n",
+      "version": "5.0.8",
+      "license": "ISC"
+    },
+    {
+      "path": "node_modules/yargs",
+      "name": "yargs",
+      "version": "17.7.3",
+      "license": "MIT"
+    },
+    {
+      "path": "node_modules/yargs-parser",
+      "name": "yargs-parser",
+      "version": "21.1.1",
+      "license": "ISC"
+    },
+    {
+      "path": "node_modules/yocto-queue",
+      "name": "yocto-queue",
+      "version": "0.1.0",
+      "license": "MIT"
+    }
+  ],
+  "vendor_bundles": "None redistributed",
+  "optional_firebase_web_sdk": "13.1.0 loaded from official gstatic CDN only when Firebase is configured",
+  "bundled_font": {
+    "path": "assets/fonts/NotoSansKR.ttf",
+    "license": "SIL Open Font License 1.1",
+    "copyright": "2014-2021 Adobe; Reserved Font Name Source",
+    "metadata_verified": true,
+    "modified": false
+  }
+}
