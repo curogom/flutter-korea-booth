@@ -24,6 +24,8 @@ Open http://127.0.0.1:8767. Installing dependencies requires network access when
 
 ## Public static demo
 
+[Open the public demo](https://curogom.github.io/flutter-korea-booth/) · No sign-in required.
+
 Build the anonymous, memory-only demonstration with Flutter and Python 3:
 
 ```sh

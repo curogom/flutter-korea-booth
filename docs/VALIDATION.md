@@ -50,3 +50,15 @@ No affected locked version or dependency-advisory release blocker was identified
 - The deployment contains the MIT license, Noto Sans KR copyright/OFL text and generated Flutter dependency `assets/NOTICES`, linked from `licenses.html`.
 - The optional Firebase loader is replaced with a static-only bootstrap in this build. No operational configuration, identifiers or credentials are used. Original operational rules, Auth, data and hosting are untouched.
 - Local validation is not itself proof of live publication. Check the repository's GitHub Pages deployment status and anonymous live URL for a particular deployed revision.
+
+### Verified public deployment
+
+Public URL: https://curogom.github.io/flutter-korea-booth/
+
+Application source: `c3114e7d47d91f935aa683282eb163b16b8416da`.
+Static artifact: `8a2997a5a1aa8c7a4c5750b2f7fc33623a2ca2e4` on `gh-pages`.
+Both commits have GitHub-verified signatures. GitHub Pages [build and deployment 42443315949](https://github.com/curogom/flutter-korea-booth/actions/runs/42443315949) completed successfully. Pages reports public access, enforced HTTPS, the `gh-pages` root as its source and no custom domain. GitHub Pages is available for public repositories on GitHub Free; no paid resources or new credentials were created.
+
+Anonymous live Chromium checks at 1280×900 and 390×844 repeated the local bilingual/four-question/result/reset, refresh, history and admin-route checks successfully. Each run observed 37 same-origin GET requests, no external request attempts and no JavaScript exceptions. The only HTTP error was the expected direct `/admin` 404, which displayed the safe static fallback; no admin login or report was available. Persistent app storage, cookies and service-worker registrations remained empty. Desktop/mobile live screenshots were visually reviewed.
+
+SHA-256 comparisons matched 12 live files to the signed artifact: index, 404 fallback, main JavaScript, both bootstraps, sample question bank, Korean font, active CanvasKit Wasm, dependency notices, OFL, MIT and source metadata. The public license page and all three license/notice downloads returned HTTP 200. This documents the observed deployed revision, not a guarantee about future edits, provider logs or all browsers.

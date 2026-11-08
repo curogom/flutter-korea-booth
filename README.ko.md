@@ -24,6 +24,8 @@ http://127.0.0.1:8767 에 접속하세요. 의존성이 캐시에 없으면 설�
 
 ## 공개 정적 시연
 
+[공개 시연 열기](https://curogom.github.io/flutter-korea-booth/) · 로그인 없이 사용할 수 있습니다.
+
 Flutter와 Python 3으로 로그인과 영구 저장이 없는 시연을 빌드합니다:
 
 ```sh
