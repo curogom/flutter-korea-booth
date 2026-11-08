@@ -17,13 +17,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get invite =>
-      'Try four original demo questions.\nThis demo does not award prizes.';
+      'New arithmetic questions, not event questions.\nNo prizes. Answers stay only in this page.';
 
   @override
   String get startQuiz => 'Start the demo quiz';
 
   @override
-  String get winRule => '3 out of 4 correct to win!';
+  String get winRule => '3 out of 4 correct completes the demo!';
 
   @override
   String get loadingQuestions => 'Loading your questions…';
@@ -79,7 +79,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get correctCount => 'correct';
 
   @override
-  String get threeToWin => 'Three to win!';
+  String get threeToWin => 'Three to complete!';
 
   @override
   String get selected => 'Selected';
@@ -346,4 +346,8 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get recordsNeedReview => 'Sync needs review';
+
+  @override
+  String get demoRouteUnavailable =>
+      'Admin, sign-in and reporting pages are not available in this public demo.';
 }

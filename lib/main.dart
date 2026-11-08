@@ -27,14 +27,15 @@ import 'ui/booth_session_gate.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final preferences = await SharedPreferences.getInstance();
-  final saved = preferences.getString('language');
+  final preferences =
+      FirebaseConfig.configured ? await SharedPreferences.getInstance() : null;
+  final saved = preferences?.getString('language');
   final device = WidgetsBinding.instance.platformDispatcher.locale.languageCode;
   final language = ['ko', 'en'].contains(saved)
       ? saved!
       : device == 'ko'
-      ? 'ko'
-      : 'en';
+          ? 'ko'
+          : 'en';
   QuestionRepository repository;
   if (FirebaseConfig.configured) {
     final namespace =
@@ -85,8 +86,9 @@ Future<void> main() async {
           ? FirestoreReportingPeriodRepository(FirebaseFirestore.instance)
           : null,
       initialLocale: Locale(language),
+      enableAdmin: FirebaseConfig.configured,
       onLocaleChanged: (locale) async {
-        await preferences.setString('language', locale.languageCode);
+        await preferences?.setString('language', locale.languageCode);
       },
     ),
   );
@@ -101,8 +103,10 @@ class BoothApp extends StatefulWidget {
     this.ledger,
     this.initialLocale = const Locale('ko'),
     this.onLocaleChanged,
+    this.enableAdmin = false,
   });
   final QuestionRepository repository;
+  final bool enableAdmin;
   final QuizAnalytics analytics;
   final ReportingPeriodRepository? reportingRepository;
   final RunLedger? ledger;
@@ -135,46 +139,74 @@ class _BoothAppState extends State<BoothApp> {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
-    debugShowCheckedModeBanner: false,
-    locale: _locale,
-    supportedLocales: AppLocalizations.supportedLocales,
-    localizationsDelegates: AppLocalizations.localizationsDelegates,
-    onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
-    theme: ThemeData(
-      fontFamily: 'NotoSansKR',
-      colorScheme: ColorScheme.fromSeed(
-        seedColor: blue,
-        brightness: Brightness.light,
-      ),
-      scaffoldBackgroundColor: Colors.white,
-      useMaterial3: true,
-      inputDecorationTheme: const InputDecorationTheme(
-        border: OutlineInputBorder(),
-      ),
-      appBarTheme: const AppBarTheme(
-        backgroundColor: Colors.white,
-        foregroundColor: navy,
-      ),
-    ),
-    home: QuizPage(
-      controller: _quiz,
-      locale: _locale,
-      onLocaleChanged: _setLocale,
-      sampleMode: widget.repository is SampleQuestionRepository,
-    ),
-    routes: {
-      '/admin': (_) => AdminSessionBoundary(
-        clearSession: FirebaseConfig.configured
-            ? () => clearAdminSession(FirebaseAuth.instance.signOut)
-            : () => clearAdminSession(() async {}),
-        child: AdminPage(
-          repository: widget.repository is QuestionAdminRepository
-              ? widget.repository as QuestionAdminRepository
-              : null,
-          ledger: widget.ledger,
-          reportingRepository: widget.reportingRepository,
+        debugShowCheckedModeBanner: false,
+        locale: _locale,
+        supportedLocales: AppLocalizations.supportedLocales,
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        onGenerateTitle: (context) => AppLocalizations.of(context).appTitle,
+        theme: ThemeData(
+          fontFamily: 'NotoSansKR',
+          colorScheme: ColorScheme.fromSeed(
+            seedColor: blue,
+            brightness: Brightness.light,
+          ),
+          scaffoldBackgroundColor: Colors.white,
+          useMaterial3: true,
+          inputDecorationTheme: const InputDecorationTheme(
+            border: OutlineInputBorder(),
+          ),
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.white,
+            foregroundColor: navy,
+          ),
         ),
-      ),
-    },
-  );
+        home: QuizPage(
+          controller: _quiz,
+          locale: _locale,
+          onLocaleChanged: _setLocale,
+          sampleMode: widget.repository is SampleQuestionRepository,
+          showAdmin: widget.enableAdmin,
+        ),
+        routes: {
+          if (widget.enableAdmin)
+            '/admin': (_) => AdminSessionBoundary(
+                  clearSession: FirebaseConfig.configured
+                      ? () => clearAdminSession(FirebaseAuth.instance.signOut)
+                      : () => clearAdminSession(() async {}),
+                  child: AdminPage(
+                    repository: widget.repository is QuestionAdminRepository
+                        ? widget.repository as QuestionAdminRepository
+                        : null,
+                    ledger: widget.ledger,
+                    reportingRepository: widget.reportingRepository,
+                  ),
+                ),
+        },
+        onUnknownRoute: (settings) => MaterialPageRoute<void>(
+          settings: settings,
+          builder: (context) {
+            final s = AppLocalizations.of(context);
+            return Scaffold(
+              appBar: AppBar(title: Text(s.appTitle)),
+              body: Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(24),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(s.demoRouteUnavailable, textAlign: TextAlign.center),
+                      const SizedBox(height: 16),
+                      FilledButton(
+                        onPressed: () => Navigator.of(context)
+                            .pushNamedAndRemoveUntil('/', (_) => false),
+                        child: Text(s.home),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
+      );
 }

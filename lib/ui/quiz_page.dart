@@ -12,11 +12,13 @@ class QuizPage extends StatefulWidget {
     required this.locale,
     required this.onLocaleChanged,
     required this.sampleMode,
+    this.showAdmin = true,
   });
   final QuizController controller;
   final Locale locale;
   final ValueChanged<Locale> onLocaleChanged;
   final bool sampleMode;
+  final bool showAdmin;
   @override
   State<QuizPage> createState() => _QuizPageState();
 }
@@ -58,8 +60,7 @@ class _QuizPageState extends State<QuizPage> with WidgetsBindingObserver {
 
   void _quizChanged() {
     final phase = controller.phase;
-    final changedPage =
-        controller.round != _lastRound ||
+    final changedPage = controller.round != _lastRound ||
         (phase != _lastPhase &&
             (phase == QuizPhase.home ||
                 phase == QuizPhase.result ||
@@ -142,20 +143,22 @@ class _QuizPageState extends State<QuizPage> with WidgetsBindingObserver {
                               if (value != null) onLocaleChanged(value);
                             },
                           ),
-                          IconButton(
-                            tooltip: s.admin,
-                            icon: const Icon(Icons.tune_rounded, size: 21),
-                            onPressed: () {
-                              controller.reset();
-                              Navigator.pushNamed(context, '/admin');
-                            },
-                          ),
+                          if (widget.showAdmin)
+                            IconButton(
+                              tooltip: s.admin,
+                              icon: const Icon(Icons.tune_rounded, size: 21),
+                              onPressed: () {
+                                controller.reset();
+                                Navigator.pushNamed(context, '/admin');
+                              },
+                            ),
                         ],
                       ),
                     ),
                     Expanded(
                       child: LayoutBuilder(
-                        builder: (context, constraints) => SingleChildScrollView(
+                        builder: (context, constraints) =>
+                            SingleChildScrollView(
                           key: const Key('quiz-scroll'),
                           controller: _scroll,
                           child: ConstrainedBox(
@@ -175,25 +178,25 @@ class _QuizPageState extends State<QuizPage> with WidgetsBindingObserver {
                                   child: AnimatedSwitcher(
                                     duration:
                                         MediaQuery.disableAnimationsOf(context)
-                                        ? Duration.zero
-                                        : const Duration(milliseconds: 300),
+                                            ? Duration.zero
+                                            : const Duration(milliseconds: 300),
                                     child: controller.phase == QuizPhase.home
                                         ? _Home(
                                             key: const ValueKey('home'),
                                             controller: controller,
                                           )
                                         : controller.phase == QuizPhase.result
-                                        ? _Result(
-                                            key: const ValueKey('result'),
-                                            controller: controller,
-                                          )
-                                        : _Question(
-                                            key: ValueKey(
-                                              'question-${controller.round}',
-                                            ),
-                                            controller: controller,
-                                            language: locale.languageCode,
-                                          ),
+                                            ? _Result(
+                                                key: const ValueKey('result'),
+                                                controller: controller,
+                                              )
+                                            : _Question(
+                                                key: ValueKey(
+                                                  'question-${controller.round}',
+                                                ),
+                                                controller: controller,
+                                                language: locale.languageCode,
+                                              ),
                                   ),
                                 ),
                               ),
@@ -337,8 +340,8 @@ class _Home extends StatelessWidget {
               controller.loading
                   ? s.loadingQuestions
                   : controller.error != null
-                  ? s.loadError
-                  : s.questionsUnavailable,
+                      ? s.loadError
+                      : s.questionsUnavailable,
               style: const TextStyle(color: muted, fontSize: 13),
             ),
           ),
@@ -457,8 +460,8 @@ class _Question extends StatelessWidget {
               revealing
                   ? (c.isCorrect ? s.dashCorrect : s.dashIncorrect)
                   : c.selection == null
-                  ? s.dashWelcome
-                  : s.dashSelected,
+                      ? s.dashWelcome
+                      : s.dashSelected,
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 12, height: 1.5, color: navy),
             ),
@@ -526,13 +529,13 @@ class _Question extends StatelessWidget {
                 final fill = correct || (!revealing && selected)
                     ? const Color(0xffedf6ff)
                     : wrong
-                    ? const Color(0xfffff0ea)
-                    : Colors.white;
+                        ? const Color(0xfffff0ea)
+                        : Colors.white;
                 final border = correct || (!revealing && selected)
                     ? blue
                     : wrong
-                    ? const Color(0xffe6a492)
-                    : lineBlue;
+                        ? const Color(0xffe6a492)
+                        : lineBlue;
                 return SizedBox(
                   width: (constraints.maxWidth - (columns - 1) * 12) / columns,
                   child: Semantics(
@@ -568,9 +571,8 @@ class _Question extends StatelessWidget {
                                     height: 29,
                                     alignment: Alignment.center,
                                     decoration: BoxDecoration(
-                                      color: correct || selected
-                                          ? blue
-                                          : paleBlue,
+                                      color:
+                                          correct || selected ? blue : paleBlue,
                                       borderRadius: BorderRadius.circular(8),
                                     ),
                                     child: correct || wrong
@@ -631,11 +633,11 @@ class _Question extends StatelessWidget {
                     Text(
                       revealing
                           ? (c.isCorrect
-                                ? s.correctFeedback
-                                : s.incorrectFeedback)
+                              ? s.correctFeedback
+                              : s.incorrectFeedback)
                           : c.selection == null
-                          ? s.selectPrompt
-                          : s.selectedAnswer(text.options[c.selection]!),
+                              ? s.selectPrompt
+                              : s.selectedAnswer(text.options[c.selection]!),
                       style: const TextStyle(
                         color: navy,
                         fontWeight: FontWeight.w700,
@@ -647,8 +649,8 @@ class _Question extends StatelessWidget {
                       revealing
                           ? text.explanation
                           : c.selection == null
-                          ? s.selectHelp
-                          : s.changeHelp,
+                              ? s.selectHelp
+                              : s.changeHelp,
                       style: const TextStyle(
                         color: muted,
                         fontSize: 12,
@@ -723,8 +725,7 @@ class _Question extends StatelessWidget {
             ),
             ...List.generate(4, (index) {
               final answered = index < c.answers.length,
-                  right =
-                      answered &&
+                  right = answered &&
                       c.answers[index] == c.session[index].correctOptionId;
               return Padding(
                 padding: const EdgeInsets.only(left: 6),
@@ -733,8 +734,8 @@ class _Question extends StatelessWidget {
                   backgroundColor: answered && !right
                       ? const Color(0xfffbe7de)
                       : index == c.round || answered
-                      ? blue
-                      : paleBlue,
+                          ? blue
+                          : paleBlue,
                   child: answered
                       ? Icon(
                           right ? Icons.check_rounded : Icons.close_rounded,
@@ -826,8 +827,8 @@ class _Result extends StatelessWidget {
                 radius: 23,
                 backgroundColor:
                     c.answers[index] == c.session[index].correctOptionId
-                    ? blue
-                    : paleBlue,
+                        ? blue
+                        : paleBlue,
                 child: Icon(
                   c.answers[index] == c.session[index].correctOptionId
                       ? Icons.check_rounded

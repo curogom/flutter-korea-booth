@@ -2,9 +2,9 @@
   "@@locale": "en",
   "appTitle": "Demo Booth Quiz",
   "challenge": "DEMO CHALLENGE",
-  "invite": "Try four original demo questions.\nThis demo does not award prizes.",
+  "invite": "New arithmetic questions, not event questions.\nNo prizes. Answers stay only in this page.",
   "startQuiz": "Start the demo quiz",
-  "winRule": "3 out of 4 correct to win!",
+  "winRule": "3 out of 4 correct completes the demo!",
   "loadingQuestions": "Loading your questions…",
   "questionsUnavailable": "The quiz is being prepared. Please ask a booth host.",
   "loadError": "Could not load questions. Please check the connection.",
@@ -22,7 +22,7 @@
   "dashCorrect": "Nice! Let’s take the next step together.",
   "dashIncorrect": "Good effort. Let’s keep going!",
   "correctCount": "correct",
-  "threeToWin": "Three to win!",
+  "threeToWin": "Three to complete!",
   "selected": "Selected",
   "successTitle": "You did it!",
   "successSubtitle": "Demo challenge complete!",
@@ -135,5 +135,6 @@
   "alreadyOpenHelp": "Continue playing in the existing tab. If you have closed that tab, you can try again here.",
   "startUnavailableTitle": "The quiz could not start safely",
   "startUnavailableHelp": "Reload the page or use the latest Chrome. Ask a booth host if the problem continues.",
-  "recordsNeedReview": "Sync needs review"
+  "recordsNeedReview": "Sync needs review",
+  "demoRouteUnavailable": "Admin, sign-in and reporting pages are not available in this public demo."
 }

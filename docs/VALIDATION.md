@@ -38,3 +38,15 @@ Optional Firebase 13.1.0 and its registry-mapped @firebase/app 0.16.4, @firebase
 Installed validation SDK Flutter 3.47.9 / Dart 3.13.7 was checked against all eight published [Dart SDK advisories](https://github.com/dart-lang/sdk/security/advisories); none applies to these versions. In particular, [GHSA-frr6-h895-5pxp](https://github.com/dart-lang/sdk/security/advisories/GHSA-frr6-h895-5pxp) is High and fixed in Flutter 3.47.8 / Dart 3.13.7, and [GHSA-q739-79rh-vmvp / CVE-2026-27704](https://github.com/dart-lang/sdk/security/advisories/GHSA-q739-79rh-vmvp) is Low and fixed in Flutter 3.41.0 / Dart 3.11.0. The [Flutter repository](https://github.com/flutter/flutter/security/advisories) listed no separate published advisories.
 
 No affected locked version or dependency-advisory release blocker was identified. Zero matches is not a vulnerability-free guarantee. The five SDK lock entries marked 0.0.0 were assessed at SDK level, not as hosted Pub releases. Engine/native/browser internals, emulator binaries and global tooling were not comprehensively inventoried. CDN artifacts and embedded dependencies were not recursively audited or executed; optional Firebase browser integration and live operation remain unverified. No functional tests or builds were rerun for this advisory check. DEPENDENCIES.json retains the initial offline-review status; this dated follow-up records the newer online result.
+
+## Public static demo: 2026-11-08
+
+- `flutter analyze --no-pub`: no issues.
+- `flutter test --no-pub`: all 126 tests passed, including public admin/sign-in/report route denial.
+- `node --test tools/booth_session.test.mjs`: all 4 tests passed. Firestore/Auth emulator rules were unchanged and their full suite was not rerun for this static-only release.
+- `sh tools/build_public_demo.sh`: JavaScript release and Wasm dry run succeeded; uses the dedicated sample-only entrypoint and local renderer/font files under `/flutter-korea-booth/`.
+- Local isolated Chromium checks at 1280×900 and 390×844 passed: Korean/English switch, four answers, result, reset, refresh, Back/Forward, hash admin/report routes and direct-path 404 fallback. Actual desktop/mobile pixels were reviewed.
+- Each viewport run observed 37 same-origin GET requests, zero attempted external requests and zero JavaScript exceptions. Fresh-context localStorage, sessionStorage, IndexedDB, cookies and service workers remained empty. No app storage was cleared. Provider HTTP logs and browser asset caches are outside this app-state observation.
+- The deployment contains the MIT license, Noto Sans KR copyright/OFL text and generated Flutter dependency `assets/NOTICES`, linked from `licenses.html`.
+- The optional Firebase loader is replaced with a static-only bootstrap in this build. No operational configuration, identifiers or credentials are used. Original operational rules, Auth, data and hosting are untouched.
+- Local validation is not itself proof of live publication. Check the repository's GitHub Pages deployment status and anonymous live URL for a particular deployed revision.

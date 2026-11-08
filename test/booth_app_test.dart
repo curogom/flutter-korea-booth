@@ -7,6 +7,32 @@ import 'package:flutter_korea_booth/model/question.dart';
 import 'quiz_controller_test.dart' show fixtures, LiveRepository;
 
 void main() {
+  testWidgets('public demo hides admin and denies all private routes',
+      (tester) async {
+    await tester.pumpWidget(BoothApp(
+      repository: SampleQuestionRepository(fixtures()),
+      initialLocale: const Locale('en'),
+    ));
+    await tester.pump(const Duration(milliseconds: 400));
+    expect(find.byIcon(Icons.tune_rounded), findsNothing);
+    for (final route in ['/admin', '/admin/reports', '/sign-in']) {
+      final context = tester.element(find.byKey(const Key('start-quiz')));
+      Navigator.of(context).pushNamed(route);
+      await tester.pump(const Duration(milliseconds: 400));
+      await tester.pump(const Duration(milliseconds: 400));
+      expect(
+          find.text(
+              'Admin, sign-in and reporting pages are not available in this public demo.'),
+          findsOneWidget);
+      expect(find.byType(TextField), findsNothing);
+      expect(find.text('Host sign-in'), findsNothing);
+      await tester.tap(find.text('Back to start'));
+      await tester.pump(const Duration(milliseconds: 400));
+      await tester.pump(const Duration(milliseconds: 400));
+      expect(find.byKey(const Key('start-quiz')), findsOneWidget);
+    }
+    await tester.pumpWidget(const SizedBox.shrink());
+  });
   for (final language in ['ko', 'en']) {
     for (final score in [2, 3]) {
       testWidgets(
@@ -144,6 +170,7 @@ void main() {
       repo.updates.addError(StateError('offline'));
       await tester.pump();
       expect(find.byKey(const Key('retry-questions')), findsOneWidget);
+      await tester.ensureVisible(find.byKey(const Key('retry-questions')));
       await tester.tap(find.byKey(const Key('retry-questions')));
       await tester.pump();
       expect(repo.listenCount, 2);

@@ -22,13 +22,26 @@ python3 -m http.server 8767 --bind 127.0.0.1 --directory build/web
 
 Open http://127.0.0.1:8767. Installing dependencies requires network access when they are not cached. The static sample build bundles its question bank, Korean font and web renderer; it is not a service-worker offline-installable PWA. Opening a static page still requires the local server.
 
+## Public static demo
+
+Build the anonymous, memory-only demonstration with Flutter and Python 3:
+
+```sh
+flutter pub get
+sh tools/build_public_demo.sh
+```
+
+The dedicated `lib/demo.dart` entrypoint uses only independently written arithmetic questions. It never initializes Firebase, Analytics, question caches or persistent language preferences. Admin, sign-in and reporting routes are unavailable. No names or participant identifiers are collected; answers and language choice reset on refresh or closing the page. No real prizes are issued.
+
+The build uses `/flutter-korea-booth/` as its base path, bundles fonts/renderer resources and licenses, and includes a static 404 fallback. Deploy the generated `build/web` contents to the `gh-pages` branch for GitHub Pages. No custom domain, backend, secret, CI workflow file or paid service is required. Keep `assets/NOTICES` and the `licenses` directory in deployments. Hosting-provider HTTP logs and normal browser asset caches are separate from app result storage.
+
 ## Scope of this copy
 
 - Original event questions were removed, including question-specific test assertions. The new bank was independently authored for this demonstration.
 - Event imagery, logos, participant records, exports, logs, generated builds, operational documents, production configuration and release utilities are omitted.
 - Web is the supplied build target. Android/iOS/macOS scaffolding, signing files and native branding are intentionally absent. Native storage code remains as an example, but native builds were not prepared or tested.
 - The app entry point does not wire participant run recording, synchronization, analytics or operator reporting. Those reusable modules and unit tests remain for reference. Re-enabling them requires an explicit privacy/retention and least-privilege design; do not recreate a shared signed-in administrator kiosk.
-- No repository, deployment, upload or live service change is included in this folder preparation.
+- The public demo is isolated from the original operational app. Its production Firebase rules, Auth, data and hosting are not changed.
 
 ## Optional Firebase question management
 
@@ -44,7 +57,7 @@ flutter run -d chrome --dart-define-from-file=config/emulator.json
 
 The emulator-only host account is host@example.test / LocalDemoOnly123!. Never use this demo password with a real service. The helper refuses real project IDs or non-loopback endpoints. Firebase CLI and Java 21+ are separate prerequisites.
 
-For your own project, copy config/firebase.example.json to ignored config/firebase.json and provide your own public web configuration. No production project is preselected and no hosting deploy configuration is provided. Configure Firebase Auth, server-enforced quizAdmin claims and Firestore rules through your own controlled setup. Do not put service-account keys, refresh tokens or operator passwords in client defines. Web client API keys are public configuration, not administrator credentials.
+For your own project, copy config/firebase.example.json to ignored config/firebase.json and provide your own public web configuration. No production project is preselected. The public static demo build is separate from Firebase hosting. Configure Firebase Auth, server-enforced quizAdmin claims and Firestore rules through your own controlled setup. Do not put service-account keys, refresh tokens or operator passwords in client defines. Web client API keys are public configuration, not administrator credentials.
 
 Each admin route entry clears inherited authentication before showing the sign-in form. Leaving clears authentication before returning to the quiz; failures block navigation until retried. Web Auth uses in-memory persistence and Firestore persistent caching is disabled. Staff must still protect an actively unlocked admin screen. Local authentication cleanup is not server-side token revocation.
 

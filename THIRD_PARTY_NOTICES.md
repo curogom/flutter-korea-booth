@@ -1,6 +1,6 @@
 # Third-party notices
 
-No event logos, mascot images, event question bank, application icons or third-party JavaScript vendor bundles are redistributed in this source copy. Generic UI icons come from Flutter's Material icons dependency.
+No event logos, mascot images, event question bank or original application icons are redistributed in this source copy. The compiled public demo includes the Flutter web renderer and generated dependency notices, and keeps its font license and application MIT license accessible from the Licenses link. Generic UI icons come from Flutter's Material icons dependency.
 
 Dart/Flutter dependencies are resolved from pubspec.lock and tool dependencies from tools/package-lock.json. Dependency implementation trees and package caches are not shipped. docs/DEPENDENCIES.json records resolved versions and available Node package license metadata. Metadata is not a substitute for license texts or legal review. Flutter generates dependency license notices when building an application.
 

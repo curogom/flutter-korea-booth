@@ -113,7 +113,7 @@ abstract class AppLocalizations {
   /// No description provided for @invite.
   ///
   /// In en, this message translates to:
-  /// **'Try four original demo questions.\nThis demo does not award prizes.'**
+  /// **'New arithmetic questions, not event questions.\nNo prizes. Answers stay only in this page.'**
   String get invite;
 
   /// No description provided for @startQuiz.
@@ -125,7 +125,7 @@ abstract class AppLocalizations {
   /// No description provided for @winRule.
   ///
   /// In en, this message translates to:
-  /// **'3 out of 4 correct to win!'**
+  /// **'3 out of 4 correct completes the demo!'**
   String get winRule;
 
   /// No description provided for @loadingQuestions.
@@ -233,7 +233,7 @@ abstract class AppLocalizations {
   /// No description provided for @threeToWin.
   ///
   /// In en, this message translates to:
-  /// **'Three to win!'**
+  /// **'Three to complete!'**
   String get threeToWin;
 
   /// No description provided for @selected.
@@ -727,6 +727,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Sync needs review'**
   String get recordsNeedReview;
+
+  /// No description provided for @demoRouteUnavailable.
+  ///
+  /// In en, this message translates to:
+  /// **'Admin, sign-in and reporting pages are not available in this public demo.'**
+  String get demoRouteUnavailable;
 }
 
 class _AppLocalizationsDelegate

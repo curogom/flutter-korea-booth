@@ -16,13 +16,13 @@ class AppLocalizationsKo extends AppLocalizations {
   String get challenge => 'DEMO CHALLENGE';
 
   @override
-  String get invite => '직접 만든 데모 문제 네 개를 풀어보세요.\n이 데모는 경품을 제공하지 않습니다.';
+  String get invite => '행사 문제 대신 새로 만든 산수 문제입니다.\n경품은 없으며, 답변은 이 페이지에서만 유지됩니다.';
 
   @override
   String get startQuiz => '데모 퀴즈 시작';
 
   @override
-  String get winRule => '4문제 중 3개 정답이면 성공!';
+  String get winRule => '4문제 중 3문제 정답으로 데모 완료!';
 
   @override
   String get loadingQuestions => '문제를 불러오는 중이에요.';
@@ -76,7 +76,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get correctCount => '개 정답';
 
   @override
-  String get threeToWin => '세 개면 성공!';
+  String get threeToWin => '3문제 정답으로 완료!';
 
   @override
   String get selected => '선택';
@@ -337,4 +337,7 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get recordsNeedReview => '동기화 확인 필요';
+
+  @override
+  String get demoRouteUnavailable => '공개 시연에서는 관리자, 로그인, 보고서 페이지를 제공하지 않습니다.';
 }

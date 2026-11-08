@@ -2,9 +2,9 @@
   "@@locale": "ko",
   "appTitle": "데모 부스 퀴즈",
   "challenge": "DEMO CHALLENGE",
-  "invite": "직접 만든 데모 문제 네 개를 풀어보세요.\n이 데모는 경품을 제공하지 않습니다.",
+  "invite": "행사 문제 대신 새로 만든 산수 문제입니다.\n경품은 없으며, 답변은 이 페이지에서만 유지됩니다.",
   "startQuiz": "데모 퀴즈 시작",
-  "winRule": "4문제 중 3개 정답이면 성공!",
+  "winRule": "4문제 중 3문제 정답으로 데모 완료!",
   "loadingQuestions": "문제를 불러오는 중이에요.",
   "questionsUnavailable": "문제를 준비하고 있어요. 스태프에게 문의해주세요.",
   "loadError": "문제를 불러오지 못했어요. 연결 상태를 확인해주세요.",
@@ -22,7 +22,7 @@
   "dashCorrect": "좋아요! 다음 한 걸음도 함께해요.",
   "dashIncorrect": "좋은 도전이에요. 계속 가볼까요?",
   "correctCount": "개 정답",
-  "threeToWin": "세 개면 성공!",
+  "threeToWin": "3문제 정답으로 완료!",
   "selected": "선택",
   "successTitle": "해냈어요!",
   "successSubtitle": "데모 미션 성공!",
@@ -135,5 +135,6 @@
   "alreadyOpenHelp": "진행 중인 퀴즈는 기존 탭에서 계속해주세요. 기존 탭을 닫았다면 다시 시도할 수 있어요.",
   "startUnavailableTitle": "퀴즈를 안전하게 시작하지 못했어요",
   "startUnavailableHelp": "페이지를 새로고침하거나 최신 Chrome으로 접속해주세요. 계속 문제가 생기면 스태프에게 알려주세요.",
-  "recordsNeedReview": "동기화 확인 필요"
+  "recordsNeedReview": "동기화 확인 필요",
+  "demoRouteUnavailable": "공개 시연에서는 관리자, 로그인, 보고서 페이지를 제공하지 않습니다."
 }
