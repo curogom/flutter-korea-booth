@@ -1,0 +1,478 @@
+[
+  {
+    "id": "demo-addition-01",
+    "order": 1,
+    "active": true,
+    "correctOptionId": "a",
+    "translations": {
+      "ko": {
+        "prompt": "3 + 2의 값은 무엇인가요?",
+        "explanation": "3에 2를 더하면 5입니다.",
+        "options": {
+          "a": "5",
+          "b": "7",
+          "c": "8",
+          "d": "9"
+        }
+      },
+      "en": {
+        "prompt": "What is 3 + 2?",
+        "explanation": "Adding 2 to 3 gives 5.",
+        "options": {
+          "a": "5",
+          "b": "7",
+          "c": "8",
+          "d": "9"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-02",
+    "order": 2,
+    "active": true,
+    "correctOptionId": "b",
+    "translations": {
+      "ko": {
+        "prompt": "4 + 3의 값은 무엇인가요?",
+        "explanation": "4에 3를 더하면 7입니다.",
+        "options": {
+          "a": "8",
+          "b": "7",
+          "c": "10",
+          "d": "11"
+        }
+      },
+      "en": {
+        "prompt": "What is 4 + 3?",
+        "explanation": "Adding 3 to 4 gives 7.",
+        "options": {
+          "a": "8",
+          "b": "7",
+          "c": "10",
+          "d": "11"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-03",
+    "order": 3,
+    "active": true,
+    "correctOptionId": "c",
+    "translations": {
+      "ko": {
+        "prompt": "5 + 4의 값은 무엇인가요?",
+        "explanation": "5에 4를 더하면 9입니다.",
+        "options": {
+          "a": "10",
+          "b": "11",
+          "c": "9",
+          "d": "13"
+        }
+      },
+      "en": {
+        "prompt": "What is 5 + 4?",
+        "explanation": "Adding 4 to 5 gives 9.",
+        "options": {
+          "a": "10",
+          "b": "11",
+          "c": "9",
+          "d": "13"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-04",
+    "order": 4,
+    "active": true,
+    "correctOptionId": "d",
+    "translations": {
+      "ko": {
+        "prompt": "6 + 5의 값은 무엇인가요?",
+        "explanation": "6에 5를 더하면 11입니다.",
+        "options": {
+          "a": "12",
+          "b": "13",
+          "c": "14",
+          "d": "11"
+        }
+      },
+      "en": {
+        "prompt": "What is 6 + 5?",
+        "explanation": "Adding 5 to 6 gives 11.",
+        "options": {
+          "a": "12",
+          "b": "13",
+          "c": "14",
+          "d": "11"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-05",
+    "order": 5,
+    "active": true,
+    "correctOptionId": "a",
+    "translations": {
+      "ko": {
+        "prompt": "7 + 1의 값은 무엇인가요?",
+        "explanation": "7에 1를 더하면 8입니다.",
+        "options": {
+          "a": "8",
+          "b": "10",
+          "c": "11",
+          "d": "12"
+        }
+      },
+      "en": {
+        "prompt": "What is 7 + 1?",
+        "explanation": "Adding 1 to 7 gives 8.",
+        "options": {
+          "a": "8",
+          "b": "10",
+          "c": "11",
+          "d": "12"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-06",
+    "order": 6,
+    "active": true,
+    "correctOptionId": "b",
+    "translations": {
+      "ko": {
+        "prompt": "8 + 2의 값은 무엇인가요?",
+        "explanation": "8에 2를 더하면 10입니다.",
+        "options": {
+          "a": "11",
+          "b": "10",
+          "c": "13",
+          "d": "14"
+        }
+      },
+      "en": {
+        "prompt": "What is 8 + 2?",
+        "explanation": "Adding 2 to 8 gives 10.",
+        "options": {
+          "a": "11",
+          "b": "10",
+          "c": "13",
+          "d": "14"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-07",
+    "order": 7,
+    "active": true,
+    "correctOptionId": "c",
+    "translations": {
+      "ko": {
+        "prompt": "9 + 3의 값은 무엇인가요?",
+        "explanation": "9에 3를 더하면 12입니다.",
+        "options": {
+          "a": "13",
+          "b": "14",
+          "c": "12",
+          "d": "16"
+        }
+      },
+      "en": {
+        "prompt": "What is 9 + 3?",
+        "explanation": "Adding 3 to 9 gives 12.",
+        "options": {
+          "a": "13",
+          "b": "14",
+          "c": "12",
+          "d": "16"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-08",
+    "order": 8,
+    "active": true,
+    "correctOptionId": "d",
+    "translations": {
+      "ko": {
+        "prompt": "10 + 4의 값은 무엇인가요?",
+        "explanation": "10에 4를 더하면 14입니다.",
+        "options": {
+          "a": "15",
+          "b": "16",
+          "c": "17",
+          "d": "14"
+        }
+      },
+      "en": {
+        "prompt": "What is 10 + 4?",
+        "explanation": "Adding 4 to 10 gives 14.",
+        "options": {
+          "a": "15",
+          "b": "16",
+          "c": "17",
+          "d": "14"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-09",
+    "order": 9,
+    "active": true,
+    "correctOptionId": "a",
+    "translations": {
+      "ko": {
+        "prompt": "11 + 5의 값은 무엇인가요?",
+        "explanation": "11에 5를 더하면 16입니다.",
+        "options": {
+          "a": "16",
+          "b": "18",
+          "c": "19",
+          "d": "20"
+        }
+      },
+      "en": {
+        "prompt": "What is 11 + 5?",
+        "explanation": "Adding 5 to 11 gives 16.",
+        "options": {
+          "a": "16",
+          "b": "18",
+          "c": "19",
+          "d": "20"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-10",
+    "order": 10,
+    "active": true,
+    "correctOptionId": "b",
+    "translations": {
+      "ko": {
+        "prompt": "12 + 1의 값은 무엇인가요?",
+        "explanation": "12에 1를 더하면 13입니다.",
+        "options": {
+          "a": "14",
+          "b": "13",
+          "c": "16",
+          "d": "17"
+        }
+      },
+      "en": {
+        "prompt": "What is 12 + 1?",
+        "explanation": "Adding 1 to 12 gives 13.",
+        "options": {
+          "a": "14",
+          "b": "13",
+          "c": "16",
+          "d": "17"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-11",
+    "order": 11,
+    "active": true,
+    "correctOptionId": "c",
+    "translations": {
+      "ko": {
+        "prompt": "13 + 2의 값은 무엇인가요?",
+        "explanation": "13에 2를 더하면 15입니다.",
+        "options": {
+          "a": "16",
+          "b": "17",
+          "c": "15",
+          "d": "19"
+        }
+      },
+      "en": {
+        "prompt": "What is 13 + 2?",
+        "explanation": "Adding 2 to 13 gives 15.",
+        "options": {
+          "a": "16",
+          "b": "17",
+          "c": "15",
+          "d": "19"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-12",
+    "order": 12,
+    "active": true,
+    "correctOptionId": "d",
+    "translations": {
+      "ko": {
+        "prompt": "14 + 3의 값은 무엇인가요?",
+        "explanation": "14에 3를 더하면 17입니다.",
+        "options": {
+          "a": "18",
+          "b": "19",
+          "c": "20",
+          "d": "17"
+        }
+      },
+      "en": {
+        "prompt": "What is 14 + 3?",
+        "explanation": "Adding 3 to 14 gives 17.",
+        "options": {
+          "a": "18",
+          "b": "19",
+          "c": "20",
+          "d": "17"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-13",
+    "order": 13,
+    "active": true,
+    "correctOptionId": "a",
+    "translations": {
+      "ko": {
+        "prompt": "15 + 4의 값은 무엇인가요?",
+        "explanation": "15에 4를 더하면 19입니다.",
+        "options": {
+          "a": "19",
+          "b": "21",
+          "c": "22",
+          "d": "23"
+        }
+      },
+      "en": {
+        "prompt": "What is 15 + 4?",
+        "explanation": "Adding 4 to 15 gives 19.",
+        "options": {
+          "a": "19",
+          "b": "21",
+          "c": "22",
+          "d": "23"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-14",
+    "order": 14,
+    "active": true,
+    "correctOptionId": "b",
+    "translations": {
+      "ko": {
+        "prompt": "16 + 5의 값은 무엇인가요?",
+        "explanation": "16에 5를 더하면 21입니다.",
+        "options": {
+          "a": "22",
+          "b": "21",
+          "c": "24",
+          "d": "25"
+        }
+      },
+      "en": {
+        "prompt": "What is 16 + 5?",
+        "explanation": "Adding 5 to 16 gives 21.",
+        "options": {
+          "a": "22",
+          "b": "21",
+          "c": "24",
+          "d": "25"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-15",
+    "order": 15,
+    "active": true,
+    "correctOptionId": "c",
+    "translations": {
+      "ko": {
+        "prompt": "17 + 1의 값은 무엇인가요?",
+        "explanation": "17에 1를 더하면 18입니다.",
+        "options": {
+          "a": "19",
+          "b": "20",
+          "c": "18",
+          "d": "22"
+        }
+      },
+      "en": {
+        "prompt": "What is 17 + 1?",
+        "explanation": "Adding 1 to 17 gives 18.",
+        "options": {
+          "a": "19",
+          "b": "20",
+          "c": "18",
+          "d": "22"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-16",
+    "order": 16,
+    "active": true,
+    "correctOptionId": "d",
+    "translations": {
+      "ko": {
+        "prompt": "18 + 2의 값은 무엇인가요?",
+        "explanation": "18에 2를 더하면 20입니다.",
+        "options": {
+          "a": "21",
+          "b": "22",
+          "c": "23",
+          "d": "20"
+        }
+      },
+      "en": {
+        "prompt": "What is 18 + 2?",
+        "explanation": "Adding 2 to 18 gives 20.",
+        "options": {
+          "a": "21",
+          "b": "22",
+          "c": "23",
+          "d": "20"
+        }
+      }
+    }
+  },
+  {
+    "id": "demo-addition-17",
+    "order": 17,
+    "active": true,
+    "correctOptionId": "a",
+    "translations": {
+      "ko": {
+        "prompt": "19 + 3의 값은 무엇인가요?",
+        "explanation": "19에 3를 더하면 22입니다.",
+        "options": {
+          "a": "22",
+          "b": "24",
+          "c": "25",
+          "d": "26"
+        }
+      },
+      "en": {
+        "prompt": "What is 19 + 3?",
+        "explanation": "Adding 3 to 19 gives 22.",
+        "options": {
+          "a": "22",
+          "b": "24",
+          "c": "25",
+          "d": "26"
+        }
+      }
+    }
+  }
+]
